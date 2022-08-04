@@ -1,0 +1,36 @@
+*,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  color: #333;
+  line-height: 1.5;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: red;
+  grid-area: header;
+}
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: pink;
+  grid-area: footer;
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 50px 900px 50px;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+}
+.main {
+  grid-area: main;
+}
